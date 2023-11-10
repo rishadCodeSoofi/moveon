@@ -1,0 +1,41 @@
+.vehicle {
+    width: 20px;
+    height: 40px;
+    background-color: #333;
+    position: absolute;
+    animation: move 3s linear infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .north {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  
+  .south {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  
+  .east {
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+  
+  .west {
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+  }
+  
